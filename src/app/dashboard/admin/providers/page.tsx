@@ -31,7 +31,7 @@ export default function ProvidersPage() {
     try {
       const res = await providerService.getAll();
       const data = res.data.data;
-      setProviders(data?.providers ?? data ?? []);
+      setProviders((data as any)?.providers ?? data ?? []);
     } catch {
       // silent
     } finally {
