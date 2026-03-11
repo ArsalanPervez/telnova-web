@@ -63,6 +63,7 @@ export interface Agent {
 }
 
 export interface Provider {
+  _id: string;
   id: string;
   name: string;
   website?: string;
