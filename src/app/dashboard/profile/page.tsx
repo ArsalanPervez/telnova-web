@@ -18,7 +18,7 @@ export default function ProfilePage() {
   const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
     name: user?.name ?? "",
-    phone: (user as Record<string, string>)?.phone ?? "",
+    phone: user?.phone ?? "",
   });
   const [passwordForm, setPasswordForm] = useState({
     currentPassword: "",
